@@ -1,0 +1,32 @@
+.class-home h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.class-parties-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 2rem;
+}
+
+.class-parties-container p {
+    text-align: center;
+}
+
+.class-parties-container .class-party {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.class-parties-container .class-party img {
+    width: 100%;
+}
+
+.class-button-secondary {
+    max-width: 120px;
+    text-align: center;
+}

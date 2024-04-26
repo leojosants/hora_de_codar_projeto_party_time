@@ -1,0 +1,14 @@
+.class-party h1,
+.class-party h3,
+.class-party p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.class-actions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}

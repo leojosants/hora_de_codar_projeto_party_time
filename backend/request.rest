@@ -1,0 +1,90 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+   "name": "Decoração",
+    "description": "Escolha a decoração para sua festa, e nós a montamos.",
+    "price": 1400,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/6629a0283f7f404d8748d180
+
+###
+DELETE http://localhost:3000/api/services/6629917e34fd4a9b0fe2677f
+
+###
+PUT http://localhost:3000/api/services/6629a0283f7f404d8748d180
+Content-Type: application/json
+
+{
+    "name": "TESTE UPDATE",
+    "description": "Alguma descrição 2",
+    "price": 1400,
+    "image": "https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
+},
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Leonardo",
+    "description": "Uma festa de aniversário",
+    "budget": 3000,
+    "image": "https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D",
+    "services": [
+        {   
+            "name": "seviço 1",
+            "description": "Alguma descrição",
+            "price": 3000,
+            "image": "https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
+        },
+        {
+            "name": "seviço 2",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/6629bb23e71b5a82790e6399
+
+###
+DELETE  http://localhost:3000/api/parties/6629bb23e71b5a82790e6399
+
+###
+PUT http://localhost:3000/api/parties/6629bb554e4dc4c731b2bf1d
+Content-Type: application/json
+
+{
+    "title": "Meu evento ddd2",
+    "author": "Leonardo",
+    "description": "Uma festa de aniversário",
+    "budget": 1000,
+    "image": "https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D",
+    "services": [
+        {   
+            "name": "seviço 1",
+            "description": "Alguma descrição",
+            "price": 3000,
+            "image": "https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
+        },
+        {
+            "name": "seviço 2",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+:root {
+    --color-7703fc: #7703fc;
+}
+
+#id-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+#id-navbar h2 {
+    color: var(--color-7703fc);
+    font-size: 900;
+}
+
+#id-navbar ul {
+    align-items: center;
+}
